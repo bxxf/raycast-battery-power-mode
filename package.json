@@ -1,0 +1,51 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "set-battery-power-mode",
+  "title": "Set Battery Power Mode",
+  "description": "Toggles between high/low power mode on macOS.",
+  "icon": "command-icon.png",
+  "author": "bxxf",
+  "owner": "bxxf.dev",
+  "categories": [
+    "System"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "set-power-mode-to-high",
+      "title": "Set Power Mode to \"High\"",
+      "description": "",
+      "mode": "view"
+    },
+    {
+      "name": "set-power-mode-to-low",
+      "title": "Set Power Mode to \"Low\"",
+      "description": "",
+      "mode": "view"
+    },
+    {
+      "name": "set-power-mode-to-auto",
+      "title": "Set Power Mode to \"Auto\"",
+      "description": "",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.65.1"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
+    "@types/node": "20.8.10",
+    "@types/react": "18.2.27",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
