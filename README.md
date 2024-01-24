@@ -1,4 +1,4 @@
-# Set Battery Power Mode
+# Raystack Battery Power Mode Extension
 
 Toggles between high/low power mode on macOS. This is particulary useful when need to switch between power modes quickly.
 
