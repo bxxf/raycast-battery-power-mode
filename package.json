@@ -3,7 +3,7 @@
   "name": "set-battery-power-mode",
   "title": "Set Battery Power Mode",
   "description": "Toggles between high/low power mode on macOS.",
-  "icon": "command-icon.png",
+  "icon": "cmd_icon.png",
   "author": "bxxf",
   "owner": "bxxf.dev",
   "categories": [
@@ -15,23 +15,24 @@
       "name": "set-power-mode-to-high",
       "title": "Set Power Mode to \"High\"",
       "description": "",
-      "mode": "view"
+      "mode": "no-view"
     },
     {
       "name": "set-power-mode-to-low",
       "title": "Set Power Mode to \"Low\"",
       "description": "",
-      "mode": "view"
+      "mode": "no-view"
     },
     {
       "name": "set-power-mode-to-auto",
       "title": "Set Power Mode to \"Auto\"",
       "description": "",
-      "mode": "view"
+      "mode": "no-view"
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.65.1"
+    "@raycast/api": "^1.65.1",
+    "run-applescript": "^7.0.0"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.6",
