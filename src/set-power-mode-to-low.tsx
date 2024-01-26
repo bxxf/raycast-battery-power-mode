@@ -11,7 +11,7 @@ export default async function Command() {
   const res = await execP("pmset -g | grep powermode | awk '{print $2}'");
   const currentMode = res.stdout.trim();
 
-  if (currentMode === "2") {
+  if (currentMode === "1") {
     await showToast({ style: Toast.Style.Failure, title: 'Power mode is already set to "Low"' });
     await setTimeout(() => {}, 1000);
   } else {
